@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin-bottom: 1rem;
+}
+
+.site {
+	max-width: 60em;
+	min-width: 20em;
+	margin: 0 auto;
+}
+
+header {
+	background: #CCC;
+	padding: 1em;
+}
+
+header h1 {
+	margin: 0;
+}
+
+article {
+	padding: 2em 0;
+	float: left;
+	width: 70%;
+}
+
+article h1 {
+	border-bottom: 1px solid #CCC;
+	font-size: 180%;
+}
+
+article h2 {
+	font-size: 150%;
+}
+
+article h3 {
+	font-size: 120%;
+}
+
+p {
+	margin-bottom: 1.5em;
+	line-height: 1.5em;
+}
+
+aside {
+	float: right;
+	width: 28%;
+	background: #FFC;
+	padding: 1.25em;
+	margin: 2em 0;
+}
+
+aside h1 {
+	font-size: 150%;
+}
+
+aside h2 {
+	font-size: 120%;
+}
+
+aside h3, article h4 {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+footer {
+	background: #EEE;
+	padding: 1.25em;
+	font-size: 80%;
+}
+
+footer div {
+	float: left;
+	margin-right: 2%;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ * From html5boilerplate.com
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
