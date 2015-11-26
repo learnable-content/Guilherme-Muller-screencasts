@@ -1,0 +1,64 @@
+body {
+	font-size: 200%;
+	max-width: 40em;
+	margin: 2em auto;
+	padding: 2em;
+	font-family: sans-serif;
+}
+
+div {
+	margin-bottom: 1.5em;
+	text-align: center;
+	padding: 0.5em;
+}
+
+button {
+	font-size: 1em;
+}
+
+p {
+	margin: 0;
+}
+
+.example1 {
+	color: red;
+	border: 0.2em solid currentColor;
+}
+
+.example2 {
+	color: green;
+	box-shadow: 0 0 1em currentColor;
+}
+
+.example2 p {
+	text-shadow: 2px 2px 2px currentColor;
+}
+
+.example3 {
+	background: white;
+	color: blue;
+	border: 3px solid currentColor;
+	transition: all 0.2s ease;
+}
+
+.example3:hover {
+	color: orange;
+}
+
+.example4 {
+	background: white;
+	color: gray;
+	border: 3px solid currentColor;
+	transition: all 0.2s ease;
+}
+
+.example4:hover {
+	color: orange;
+}
+
+.icon {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	display: inline-block;
+}
