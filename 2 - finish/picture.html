@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Picture Tag</title>
+
+	<link rel="stylesheet" href="css/base.css">
+	<script>
+		//create the picture element, if it's not already created elsewhere
+		document.createElement("picture");
+	</script>
+</head>
+<body>
+
+<div class="gallery">
+	<h1>Patagonia</h1>
+	
+	<ul class="photo-gallery group">
+		<li>
+			<picture>
+				<source media="(min-width: 37.5em)" srcset="media/img1_square.jpg 1x, media/img1_square@2x.jpg 2x">
+				<source srcset="media/img1_wide.jpg 1x, media/img1_wide@2x.jpg 2x">
+				<!-- fallback -->
+				<img src="media/img1_square.jpg" alt="Torres del Paine">
+			</picture>
+		</li>
+		<li>
+			<picture>
+				<source media="(min-width: 37.5em)" srcset="media/img2_square.jpg 1x, media/img2_square@2x.jpg 2x">
+				<source srcset="media/img2_wide.jpg 1x, media/img2_wide@2x.jpg 2x">
+				<!-- fallback -->
+				<img src="media/img2_square.jpg" alt="Perito Moreno Glacier">
+			</picture>
+		</li>
+		<li>
+			<picture>
+				<source media="(min-width: 37.5em)" srcset="media/img3_square.jpg 1x, media/img3_square@2x.jpg 2x">
+				<source srcset="media/img3_wide.jpg 1x, media/img3_wide@2x.jpg 2x">
+				<!-- fallback -->
+				<img src="media/img3_square.jpg" alt="Mount Fitz Roy">
+			</picture>
+		</li>
+	</ul>
+</div>
+
+<script src="js/picturefill.min.js" async></script>
+</body>
+</html>
