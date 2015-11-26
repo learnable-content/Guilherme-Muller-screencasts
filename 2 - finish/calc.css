@@ -1,0 +1,100 @@
+/* base styles */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.example1 {
+	background: #CCC;
+	padding: 3em 0;
+}
+
+.example2 {
+	background: #FFC;
+}
+
+.example3 {
+	height: 100vh;
+	background: green;
+	position: relative;
+}
+
+.example4 {
+	background: #CCC;
+	padding: 2em;
+}
+
+/*
+-- Relevant example styles
+*/
+
+/* example 1 */
+
+.example1 .container {
+	background: #FFF;
+	padding: 1em;
+	width: calc(500px + 100px);
+	margin: 0 auto;
+}
+
+/* example 2 */
+
+.example2 .col {
+	background: #000;
+	height: 500px;
+	color: #FFF;
+	border: 5px solid red;
+	width: calc(100% / 4 - 40px);
+	margin: 20px;
+	float: left;
+}
+
+/* example 3 */
+
+.example3 .container {
+	background: #FFF;
+	padding: 1em;
+	text-align: center;
+	width: 500px;
+	height: 70px;
+	margin: 0 auto;
+	
+	/* this would work if supported - for centering text in container */
+	/*line-height: calc(70px - 2em);*/
+	line-height: 38px;
+
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 250px);
+}
+
+/* example 4 */
+
+.example4 .col1, .example4 .col2 {
+	height: 500px;
+	float: left;
+}
+
+.example4 .col1 {
+	background: #FFC;
+	width: 200px;
+}
+
+.example4 .col2 {
+	background: #FFF;
+	width: calc(100% - 200px);
+}
