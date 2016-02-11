@@ -1,0 +1,33 @@
+//
+//-- Header
+//
+
+.site-header-outer
+,.site-menu-outer
+{
+	min-width: 64em;
+}
+
+.site-header
+,.footer-menus
+,.site-width {
+	width: 64em;
+	margin: 0 auto;
+}
+
+.site-header-outer {
+	background: #FFF;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+	z-index: 200;
+	position: relative;
+}
+
+.site-logo {
+	display: block;
+	float: left;
+	padding: 1.5em 3em 1em 4em;
+}
+
+.site-logo img {
+	display: block;
+}

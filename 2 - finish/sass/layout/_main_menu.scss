@@ -1,0 +1,36 @@
+//
+//-- Main Menu
+//
+	
+.site-menu {
+	float: left;
+	margin-right: 1em;
+	margin-top: 1.8em;
+}
+
+.site-menu li {
+	display: inline-block;
+}
+
+.site-menu a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	color: #000;
+	border-right: 1px solid #666;
+	padding-right: 1em;
+	margin-right: 1em;
+}
+
+.site-menu li:last-child a {
+	border-right: 0;
+}
+
+.site-menu a:hover {
+	opacity: 0.6;
+}
+
+.site-menu a.selected {
+	color: #eeb310;
+}

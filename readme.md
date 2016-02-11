@@ -1,2 +1,2 @@
-##Guilherme-Muller-screencasts
+##Guilherme-Muller Sass Partials Screencast
 

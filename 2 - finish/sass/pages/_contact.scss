@@ -1,0 +1,28 @@
+//
+//-- Contact Us
+//
+
+.contact.submenu {
+	background: #eeb310;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	z-index: 150;
+	position: relative;
+	text-align: center;
+}
+
+.contact.submenu li {
+	display: inline-block;
+	padding: 0.7em 2em;
+}
+
+.contact.submenu a {
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 0.875em;
+	color: #000;
+}
+
+.contact.submenu a:hover, .contact.submenu a.active {
+	color: #FFF;
+}

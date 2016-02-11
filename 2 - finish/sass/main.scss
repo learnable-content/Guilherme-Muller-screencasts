@@ -1,0 +1,27 @@
+//
+//-- Main SCSS file
+//
+
+// IMPORTS
+
+@import "base/reset";
+@import "base/typography";
+@import "base/forms";
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/main_menu";
+@import "layout/content";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/product_listing";
+@import "pages/product_details";
+@import "pages/contact";
+
+@import "components/pagination";
+@import "utils/general_classes";
+@import "vendor/jquery_ui";
+
+@import "base/print";

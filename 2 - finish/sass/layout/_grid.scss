@@ -1,0 +1,70 @@
+//
+//-- Grid System
+//
+
+.grid12-1
+,.grid12-2
+,.grid12-3
+,.grid12-4
+,.grid12-5
+,.grid12-6
+,.grid12-7
+,.grid12-8
+,.grid12-9
+,.grid12-10
+,.grid12-11
+{
+	float: left;
+	margin-right: 2%;
+}
+
+.last, fieldset.group .last {
+	margin-right: 0;
+	float: right;
+}
+
+/* 12 column grid */
+
+.grid12-11 {
+	width: 91.5%;
+}
+
+.grid12-10 {
+	width: 83%;
+}
+
+.grid12-9 {
+	width: 74.5%;
+}
+
+.grid12-8 {
+	width: 66%;
+}
+
+.grid12-7 {
+	width: 57.5%;
+}
+
+.grid12-6 {
+	width: 49%;
+}
+
+.grid12-5 {
+	width: 40.5%;
+}
+
+.grid12-4 {
+	width: 32%;
+}
+
+.grid12-3 {
+	width: 23.5%;
+}
+
+.grid12-2 {
+	width: 15%;
+}
+
+.grid12-1 {
+	width: 6.5%;
+}

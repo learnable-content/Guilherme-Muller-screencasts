@@ -1,0 +1,38 @@
+//
+//-- About
+//
+
+.timeline h2 {
+	text-transform: uppercase;
+}
+
+.timeline {
+	width: 64em;
+	margin: 1.5em auto;
+}
+
+.timeline ul {
+	padding: 0 2em;
+}
+
+.timeline li {
+	display: block;
+	float: left;
+	margin: 0 1.84em;
+}
+
+.timeline a {
+	color: #4d4d4d;
+	display: block;
+	font-size: 1.375em;
+	text-decoration: none;
+	padding-bottom: 1.2em;
+}
+
+.timeline a:hover {
+	color: #eeb310;
+}
+
+.timeline a.active {
+	color: #eeb310;
+}

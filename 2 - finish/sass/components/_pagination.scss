@@ -1,0 +1,32 @@
+//
+//-- Pagination
+//
+
+.pagination {
+	font-size: 0.875em;
+	margin: 1.5em 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.pagination a {
+	padding: 0.3em 0.7em;
+	border: 1px solid #EEEEEE;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.pagination a:hover {
+	background-color: #333333;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.pagination strong {
+	display: inline-block;
+	padding: 0.3em 0.7em;
+	background-color: #666666;
+	text-decoration: none;
+	color: #FFFFFF;
+	border: 1px solid #EEEEEE;
+}

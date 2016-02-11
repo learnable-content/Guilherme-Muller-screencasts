@@ -1,0 +1,100 @@
+//
+//-- Typography
+//
+
+input, textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+body {
+	font-size: 1em;
+	color: #000;
+	background: #FFF;
+}
+
+body, input, textarea, select, button {
+	font-family: sans-serif;
+}
+
+a:link {
+	color: #000;
+}
+
+a:visited {
+	color: #666;
+}
+
+a:hover {
+	color: #eeb310;
+	text-decoration: none;
+}
+
+a:focus {
+	
+}
+
+a:active {
+	color: #900;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/* base title styles */
+
+h1 {
+	font-size: 2em;
+	margin: 0 0 0.67em 0;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 0 0 0.83em 0;
+}
+
+h3 {
+	font-size: 1.17em;
+	margin: 0 0 1em 0;
+}
+
+h4 {
+	font-size: 1em;
+	margin: 0 0 1.33em 0;
+}
+
+h5 {
+	font-size: 0.83em;
+	margin: 0 0 1.67em 0;
+}
+
+h6 {
+	font-size: 0.75em;
+	margin: 0 0 2.33em 0;
+}
+
+/* other text tags */
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: 1.4em;
+}
+
+/* hr */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #CCC;
+	margin: 1em 0;
+	padding: 0;
+}

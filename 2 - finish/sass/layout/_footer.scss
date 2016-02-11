@@ -1,0 +1,51 @@
+//
+//-- Footer
+//
+
+.footer-outer {
+	background: #808080;
+}
+
+.footer-info {
+	color: #FFF;
+	text-align: center;
+}
+
+.footer-info a {
+	color: #FFF;
+}
+
+// footer menus
+
+.footer-menus-outer {
+	background: #666462;
+}
+
+.footer-menus {
+	color: #ccc7c2;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.footer-menus .footer-menu {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	margin: 1.8em 1.4em;
+}
+
+.footer-menus a {
+	color: #ccc7c2;
+	font-size: 60%;
+	display: block;
+	text-decoration: none;
+}
+
+.footer-menus a:hover {
+	text-decoration: underline;
+}
+
+.footer-menu h2 {
+	font-size: 0.785em;
+	margin-bottom: 0.2em;
+}

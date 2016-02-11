@@ -1,0 +1,42 @@
+//
+//-- Content - General
+//
+
+.main-content > .inner {
+	padding: 2em 5em;
+	width: 54em;
+	margin: auto;
+}
+
+.main-content h1 {
+	text-transform: uppercase;
+}
+
+.main-content p {
+	font-size: 0.9375em;
+}
+
+.section-title {
+	background: #eeb310;
+	text-align: center;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+	z-index: 100;
+	position: relative;
+}
+
+.section-title h1 {
+	text-transform: uppercase;
+	font-size: 1.589375em;
+	padding: 1em;
+	color: #FFF;
+}
+
+.section-title h1 span {
+	display: inline-block;
+	padding-left: 1em;
+	padding-right: 0.9em;
+}
+
+.section-title h1 span strong {
+	font-weight: normal;
+}
