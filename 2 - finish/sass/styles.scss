@@ -1,0 +1,74 @@
+//
+//-- Sass Functions
+//
+
+// simple sum example
+
+@function sum($arg1, $arg2) {
+	@return $arg1 + $arg2;
+}
+
+// simple sum with unit
+
+@function sum2($arg1, $arg2) {
+	@return $arg1 + $arg2 + 0px;
+}
+
+// calculate percentage
+// inspiration: http://thesassway.com/advanced/pure-sass-functions
+@function cp($value, $context) {
+	@return percentage($value / $context);
+}
+
+// calculate column width inside grid with inside gutters
+@function column-width($column-span: 6, $gutter-size: 2%, $grid-columns: 12) {
+	// first, calculate single grid unit
+	$available-space: 100% - (($grid-columns - 1) * $gutter-size);
+	$single-unit: $available-space / $grid-columns;
+	
+	// then calculate column size
+	$column-size: $single-unit * $column-span + ($gutter-size * ($column-span - 1));
+
+	@return $column-size;
+}
+
+
+//
+//-- Example styles
+//
+
+p {
+	width: sum(200, 100);
+}
+
+p {
+	width: sum2(200, 100);
+}
+
+div {
+	width: cp(500, 960);
+}
+
+div {
+	width: column-width();
+}
+
+div {
+	width: column-width(1, 2%, 12);
+}
+
+div {
+	width: column-width($gutter-size: 5%);
+}
+
+div {
+	width: column-width($column-span: 7);
+}
+
+div {
+	width: column-width($grid-columns: 16, $column-span: 9);
+}
+
+div {
+	width: column-width($column-span: 7, $grid-columns: 16);
+}
