@@ -1,0 +1,90 @@
+/* example clearfix mixin */
+.clearfix1:before, .clearfix1:after {
+  content: " ";
+  display: table;
+}
+.clearfix1:after {
+  clear: both;
+}
+
+.row1:before, .row1:after {
+  content: " ";
+  display: table;
+}
+.row1:after {
+  clear: both;
+}
+
+.group1:before, .group1:after {
+  content: " ";
+  display: table;
+}
+.group1:after {
+  clear: both;
+}
+
+/* example clearfix extend */
+.clearfix-base:before, .clearfix2:before, .row2:before, .group2:before, .clearfix-base:after, .clearfix2:after, .row2:after, .group2:after {
+  content: " ";
+  display: table;
+}
+.clearfix-base:after, .clearfix2:after, .row2:after, .group2:after {
+  clear: both;
+}
+
+/* a possible problem with extend */
+h3, .example1, .example2 {
+  background: black;
+}
+
+footer h3 span, footer .example1 span, footer .example2 span {
+  color: #FFF;
+}
+
+nav > ul > li > h3, nav > ul > li > .example1, nav > ul > li > .example2 {
+  font-size: 1.25em;
+}
+
+main h3, main .example1, main .example2 {
+  border-bottom: 1px solid #CCC;
+}
+
+/* a suggestion with placeholders */
+.grid12-6, .example-div {
+  width: 49%;
+}
+
+.content .grid12-6 {
+  background: white;
+}
+
+/* mixins with arguments */
+div {
+  border: 1px solid #000;
+}
+
+footer {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+
+/* extends, mixins and media queries */
+/* will NOT work - can't extend when the selector and extendee are not inside the same @media query
+@media only screen and (min-width: 600px) {
+	div {
+		@extend .clearfix-base;
+	}
+}
+*/
+/* with a mixin - it will work */
+@media only screen and (min-width: 600px) {
+  div:before, div:after {
+    content: " ";
+    display: table;
+  }
+  div:after {
+    clear: both;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

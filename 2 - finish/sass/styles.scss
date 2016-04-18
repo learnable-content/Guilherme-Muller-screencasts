@@ -1,0 +1,127 @@
+//
+//-- Use Cases for Sass Extends and Mixins
+//
+
+/* example clearfix mixin */
+
+@mixin clearfix() {
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.clearfix1 {
+	@include clearfix();
+}
+
+.row1 {
+	@include clearfix();
+}
+
+.group1 {
+	@include clearfix();
+}
+
+/* example clearfix extend */
+
+.clearfix-base {
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.clearfix2 {
+	@extend .clearfix-base;
+}
+
+.row2 {
+	@extend .clearfix-base;
+}
+
+.group2 {
+	@extend .clearfix-base;
+}
+
+/* a possible problem with extend */
+
+h3 {
+	background: black;
+}
+
+footer h3 span {
+	color: #FFF;
+}
+
+nav > ul > li > h3 {
+	font-size: 1.25em;
+}
+
+main h3 {
+	border-bottom: 1px solid #CCC;
+}
+
+.example1 {
+	@extend h3;
+}
+
+.example2 {
+	@extend h3;
+}
+
+/* a suggestion with placeholders */
+
+.grid12-6, %grid12-6 {
+	width: 49%;
+}
+
+.content .grid12-6 {
+	background: white;
+}
+
+.example-div {
+	@extend %grid12-6;
+}
+
+/* mixins with arguments */
+
+@mixin border($border-values, $rounded: false) {
+	border: $border-values;
+	@if($rounded) {
+		border-radius: 0.5em;
+	}
+}
+
+div {
+	@include border(1px solid #000);
+}
+
+footer {
+	@include border(2px solid rgba(0,0,0,0.2), true);
+}
+
+/* extends, mixins and media queries */
+
+/* will NOT work - can't extend when the selector and extendee are not inside the same @media query
+@media only screen and (min-width: 600px) {
+	div {
+		@extend .clearfix-base;
+	}
+}
+*/
+
+/* with a mixin - it will work */
+@media only screen and (min-width: 600px) {
+	div {
+		@include clearfix();
+	}
+}
