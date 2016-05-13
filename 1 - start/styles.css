@@ -1,0 +1,61 @@
+/*
+-- Example Styles
+*/
+
+
+
+/*
+-- Base Styles
+*/
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-family: sans-serif;
+	background: #EEE;
+}
+
+body {
+	max-width: 60em;
+	min-width: 20em;
+	background: #FFF;
+	padding: 1em;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, h2 {
+	margin-bottom: 1rem;
+	line-height: 1.5;
+	border-bottom: 1px solid #CCC;
+}
+
+p {
+	margin-bottom: 1.5em;
+	line-height: 1.5;
+}
+
+ul {
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+div {
+	margin-bottom: 1.5rem;
+}
+
+.highlight {
+	background: #FFC;
+	padding: 1em;
+}
+
+.highlight p:last-child {
+	margin-bottom: 0;
+}
